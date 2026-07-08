@@ -1,1 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>布拉格（传奇）网游公会</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Meta tags -->
+    <meta name="keywords" content="布拉格网游公会,布拉格,布拉格论坛,布拉格公会,布拉格家族,公会论坛,网游公会,网游十大公会,游戏攻略">
+    <meta name="description" content="布拉格(传奇)网游公会是全国十大网游公会,欢迎各位网游爱好者加入布拉格网游公会。布拉格网游公会,布拉格,布拉格论坛,布拉格公会,布拉格家族,公会论坛,网游公会,网游十大公会,游戏攻略等活动发布。">
+    <!-- Open Graph -->
+    <meta property="og:title" content="布拉格（传奇）网游公会">
+    <meta property="og:type" content="WebSite">
+    <meta property="og:url" content="https://www.buage.Com/">
+    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/873423b4a82f8e62.png">
+    <meta property="og:description" content="布拉格(传奇)网游公会是全国十大网游公会,欢迎各位网游爱好者加入布拉格网游公会。布拉格网游公会,布拉格,布拉格论坛,布拉格公会,布拉格家族,公会论坛,网游公会,网游十大公会,游戏攻略等活动发布。">
+    <meta property="og:site_name" content="布拉格（传奇）网游公会">
+    <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --tb-orange: #FF5000;
+            --tb-light: #FFF1EB;
+            --tb-hover: #E04800;
+        }
+        html, body { height: 100%; }
+        body {
+            font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: #FF5000; transition: color .2s; }
+        a:hover, a:focus { color: #E04800; text-decoration: none; }
 
+        /* ── Navbar ── */
+        .navbar-default {
+            background: rgba(255,255,255,.97);
+            border: none;
+            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 0;
+        }
+        .navbar-brand { font-weight: 700; font-size: 20px; color: #FF5000 !important; letter-spacing: 1px; }
+        .navbar-nav>li>a { color: #555 !important; font-size: 14px; transition: color .2s; }
+        .navbar-nav>li>a:hover,
+        .navbar-nav>li.active>a,
+        .navbar-nav>li.active>a:hover,
+        .navbar-nav>li.active>a:focus { color: #FF5000 !important; background: none !important; }
+        .navbar-toggle { border-color: #ddd; }
+        .navbar-toggle .icon-bar { background: #FF5000; }
+
+        /* ── Sections ── */
+        section { padding: 70px 0; }
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-title h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #222;
+            margin: 0 0 10px;
+            letter-spacing: 2px;
+        }
+        .section-title .divider {
+            width: 50px;
+            height: 3px;
+            background: #FF5000;
+            margin: 0 auto 14px;
+            border-radius: 2px;
+        }
+        .section-title p { color: #999; font-size: 14px; }
+
+        /* ── Hero ── */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #FFF1EB 0%, #fff 100%);
+            padding: 110px 0 90px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 14px;
+            letter-spacing: 2px;
+        }
+        .hero h1 span { color: #FF5000; }
+        .hero .lead { font-size: 18px; color: #888; margin-bottom: 32px; }
+        .hero .btn-primary-lg {
+            display: inline-block;
+            padding: 12px 42px;
+            font-size: 16px;
+            color: #fff;
+            background: #FF5000;
+            border-radius: 30px;
+            transition: all .3s;
+            border: none;
+            letter-spacing: 1px;
+        }
+        .hero .btn-primary-lg:hover { background: #E04800; color: #fff; box-shadow: 0 4px 14px rgba(255,80,0,.35); }
+
+        /* ── About ── */
+        .about .feature-card {
+            text-align: center;
+            padding: 32px 18px;
+            transition: transform .3s;
+        }
+        .about .feature-card:hover { transform: translateY(-4px); }
+        .about .feature-card .icon-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: #FFF1EB;
+            color: #FF5000;
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+        .about .feature-card h4 { font-size: 17px; color: #333; margin-bottom: 8px; }
+        .about .feature-card p  { color: #999; font-size: 13px; line-height: 1.7; }
+
+        /* ── Games ── */
+        .games { background: #FAFAFA; }
+        .game-item {
+            text-align: center;
+            padding: 20px 10px;
+            margin-bottom: 16px;
+        }
+        .game-item .game-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            background: #fff;
+            color: #FF5000;
+            font-size: 26px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.04);
+            transition: box-shadow .3s;
+        }
+        .game-item:hover .game-icon { box-shadow: 0 4px 16px rgba(255,80,0,.18); }
+        .game-item h5 { font-size: 15px; color: #333; margin: 0; }
+
+        /* ── News ── */
+        .news-list { max-width: 700px; margin: 0 auto; }
+        .news-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .news-item:last-child { border-bottom: none; }
+        .news-item a { color: #555; font-size: 14px; flex: 1; padding-right: 16px; }
+        .news-item a:hover { color: #FF5000; }
+        .news-item .date { color: #bbb; font-size: 12px; white-space: nowrap; }
+        .news-item .badge-tag {
+            display: inline-block;
+            color: #FF5000;
+            background: #FFF1EB;
+            padding: 2px 8px;
+            font-size: 11px;
+            border-radius: 3px;
+            margin-right: 8px;
+            white-space: nowrap;
+        }
+
+        /* ── Join ── */
+        .join { text-align: center; }
+        .join h2 { font-size: 26px; margin-bottom: 16px; color: #222; }
+        .join p  { color: #999; margin-bottom: 28px; }
+        .join .btn-join {
+            display: inline-block;
+            padding: 11px 38px;
+            font-size: 15px;
+            color: #FF5000;
+            background: #fff;
+            border: 2px solid #FF5000;
+            border-radius: 30px;
+            transition: all .3s;
+            letter-spacing: 1px;
+        }
+        .join .btn-join:hover { background: #FF5000; color: #fff; }
+
+        /* ── Footer ── */
+        .footer {
+            background: #FAFAFA;
+            border-top: 1px solid #f0f0f0;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #bbb;
+        }
+        .footer .beian a { color: #bbb; margin: 0 8px; }
+        .footer .beian a:hover { color: #FF5000; }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .hero { padding: 80px 0 60px; }
+            .hero h1 { font-size: 30px; }
+            .hero .lead { font-size: 15px; }
+            section { padding: 50px 0; }
+            .section-title h2 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+
+<!-- ====== Navbar ====== -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">布拉格</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#games">入驻游戏</a></li>
+                <li><a href="#news">公会动态</a></li>
+                <li><a href="#join">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ====== Hero ====== -->
+<section id="home" class="hero">
+    <div class="container">
+        <h1>布拉格<span>网游公会</span></h1>
+        <p class="lead">以游戏会友 · 以热血铸魂 · 以兄弟之名并肩前行</p>
+        <a href="#join" class="btn-primary-lg">加入布拉格</a>
+    </div>
+</section>
+
+<!-- ====== 关于我们 ====== -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>关于我们</h2>
+            <div class="divider"></div>
+            <p>始于热爱，成于兄弟</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fa fa-flag"></i></div>
+                    <h4>公会使命</h4>
+                    <p>凝聚每一份热爱，打造温暖有力量的游戏家园，让每一位成员找到归属感。</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fa fa-group"></i></div>
+                    <h4>兄弟情义</h4>
+                    <p>不抛弃、不放弃。游戏中并肩作战，生活中互帮互助，我们是永远的兄弟。</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fa fa-trophy"></i></div>
+                    <h4>荣耀征程</h4>
+                    <p>从开荒到称霸，从新手到强者，布拉格陪你走过每一段精彩旅程。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== 入驻游戏 ====== -->
+<section id="games" class="games">
+    <div class="container">
+        <div class="section-title">
+            <h2>入驻游戏</h2>
+            <div class="divider"></div>
+            <p>多款热门游戏，总有一款适合你</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-shield"></i></div>
+                    <h5>魔兽世界</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-crosshairs"></i></div>
+                    <h5>穿越火线</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-gamepad"></i></div>
+                    <h5>英雄联盟</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-fort-awesome"></i></div>
+                    <h5>绝地求生</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-magic"></i></div>
+                    <h5>永劫无间</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-globe"></i></div>
+                    <h5>原神</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-male"></i></div>
+                    <h5>逆水寒</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="game-item">
+                    <div class="game-icon"><i class="fa fa-rocket"></i></div>
+                    <h5>星际战甲</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== 公会动态 ====== -->
+<section id="news" class="news">
+    <div class="container">
+        <div class="section-title">
+            <h2>公会动态</h2>
+            <div class="divider"></div>
+            <p>最新公告与活动资讯</p>
+        </div>
+        <div class="news-list">
+            <div class="news-item">
+                <div><span class="badge-tag">公告</span><a href="#">2026夏季大型团建活动报名开启</a></div>
+                <span class="date">2026-07-08</span>
+            </div>
+            <div class="news-item">
+                <div><span class="badge-tag">战报</span><a href="#">布拉格战队再创佳绩，荣获公会联赛冠军</a></div>
+                <span class="date">2026-07-02</span>
+            </div>
+            <div class="news-item">
+                <div><span class="badge-tag">招募</span><a href="#">新服开荒团火热招募中，寻找热血战友</a></div>
+                <span class="date">2026-06-25</span>
+            </div>
+            <div class="news-item">
+                <div><span class="badge-tag">活动</span><a href="#">魔兽世界怀旧服周年庆福利大放送</a></div>
+                <span class="date">2026-06-18</span>
+            </div>
+            <div class="news-item">
+                <div><span class="badge-tag">公告</span><a href="#">公会论坛新版上线，更多功能等你体验</a></div>
+                <span class="date">2026-06-10</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== 加入我们 ====== -->
+<section id="join" class="join">
+    <div class="container">
+        <h2>加入布拉格</h2>
+        <p>无论新手还是老玩家，布拉格欢迎每一位热爱游戏的你</p>
+        <a href="#" class="btn-join"><i class="fa fa-hand-o-right"></i> 立即加入</a>
+    </div>
+</section>
+
+<!-- ====== Footer ====== -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 布拉格网游公会 · Buage.com 火山云计算</p>
+        <p class="beian">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">
+                <i class="fa fa-shield"></i> 鲁ICP备2024092961号-4
+            </a>
+            <span>&nbsp;|&nbsp;</span>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank" rel="nofollow">
+                <i class="fa fa-lock"></i> 鲁公网安备37131202371951号
+            </a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+$(function(){
+    // Smooth scroll
+    $('a[href^="#"]').on('click', function(e){
+        var t = $(this).attr('href');
+        if(t==='#') return;
+        var $t = $(t);
+        if($t.length){
+            e.preventDefault();
+            $('html,body').animate({scrollTop:$t.offset().top-56},500);
+        }
+    });
+    // Active nav on scroll
+    var $sections = $('section[id]'), $nav = $('.navbar-nav a');
+    $(window).on('scroll', function(){
+        var scrollPos = $(this).scrollTop() + 80;
+        $sections.each(function(){
+            var top = $(this).offset().top,
+                bot = top + $(this).outerHeight();
+            if(scrollPos>=top && scrollPos<=bot){
+                var id = $(this).attr('id');
+                $nav.parent().removeClass('active');
+                $nav.filter('[href="#'+id+'"]').parent().addClass('active');
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
